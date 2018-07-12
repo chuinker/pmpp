@@ -10,10 +10,10 @@ PG_CONFIG = pg_config
 MODULES	= $(patsubst %.c,%,$(wildcard src/*.c))
 MODULE_big = $(EXTENSION)
 OBJS = $(patsubst %.c,%.o,$(wildcard src/*.c))
-PG_CPPFLAGS= $(shell $(PG_CONFIG) --cflags ) -I $(shell $(PG_CONFIG) --includedir)
-SHLIB_LINK = -L$(shell $(PG_CONFIG) --pkglibdir) $(shell $(PG_CONFIG) --libs )  -lpq
+PG_CPPFLAGS := $(shell $(PG_CONFIG) --cflags ) -I $(shell $(PG_CONFIG) --includedir)
+SHLIB_LINK := -lpq
 
-PG94 = $(shell $(PG_CONFIG) --version | egrep " 8\.| 9\.0| 9\.1| 9\.2| 9\.3" > /dev/null && echo no || echo yes)
+PG94 := $(shell $(PG_CONFIG) --version | egrep " 8\.| 9\.0| 9\.1| 9\.2| 9\.3" > /dev/null && echo no || echo yes)
 ifeq ($(PG94),no)
 $(error Minimum version of PostgreSQL requires is 9.4.0)
 endif
