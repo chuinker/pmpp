@@ -2,8 +2,8 @@
     "name": "pmpp",
     "abstract": "Poor Man's Parallel Processing",
     "description": "Leverage libpq in asynchronous mode to run result-set-similar queries against one or more databases and return the results as a single result set",
-    "version": "1.2.2",
-    "maintainer": [ "Corey Huinker <corey.huinker@moat.com>" ],
+    "version": "1.2.3",
+    "maintainer": [ "Corey Huinker <corey.huinker@gmail.com>" ],
     "license": "postgresql",
     "generated_by": "Corey Huinker",
     "provides": {
@@ -11,7 +11,7 @@
             "abstract": "Leverage libpq in asynchronous mode to run result-set-similar queries against one or more databases and return the results as a single result set",
             "file": "sql/pmpp.sql",
             "docfile": "doc/pmpp.md",
-            "version": "1.2.2"
+            "version": "1.2.3"
         }
     },
     "release_status": "stable",
@@ -24,11 +24,11 @@
     },
     "resources": {
         "bugtracker": {
-            "web": "https://github.com/moat/pmpp/issues"
+            "web": "https://github.com/coreyhuinker/pmpp/issues"
         },
         "repository": {
-            "url": "git://github.com/moat/pmpp.git" ,
-            "web": "https://github.com/moat/pmpp",
+            "url": "git://github.com/coreyhuinker/pmpp.git" ,
+            "web": "https://github.com/coreyhuinker/pmpp",
             "type": "git"
         }
     },    
